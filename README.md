@@ -4,6 +4,16 @@ A foundational backend development lab demonstrating how to build web servers us
 
 ---
 
+## 🌐 Live Deployment
+
+🔗 **Live URL:** [https://lab01-silk.vercel.app/](https://lab01-silk.vercel.app/)
+
+- 🏠 **Home:** [https://lab01-silk.vercel.app/](https://lab01-silk.vercel.app/)
+- 👤 **About:** [https://lab01-silk.vercel.app/about](https://lab01-silk.vercel.app/about)
+- ⏰ **Time:** [https://lab01-silk.vercel.app/time](https://lab01-silk.vercel.app/time)
+
+---
+
 ## 👤 Author Information
 
 - **Name:** G. Meghana
@@ -15,6 +25,7 @@ A foundational backend development lab demonstrating how to build web servers us
 
 ```text
 BDF-Lab-01/
+├── api/                  # Vercel serverless entry point
 ├── node_modules/         # Installed dependencies (git ignored)
 ├── screenshots/          # Output and verification screenshots
 ├── .gitignore            # Git ignore file
@@ -22,6 +33,7 @@ BDF-Lab-01/
 ├── package-lock.json     # Dependency lockfile
 ├── plain-server.js       # Basic server using Node.js 'http' module
 ├── server-http.js        # Express.js server with routes and 404 handler
+├── vercel.json           # Vercel deployment & routing config
 └── README.md             # Project documentation
 ```
 
@@ -76,12 +88,12 @@ node server-http.js
 
 ## 📡 API Endpoints (Express Server)
 
-| Method | Endpoint | Description | Sample Response |
-| :--- | :--- | :--- | :--- |
-| `GET` | `/` | Welcome page | `Welcome to my Node.js and Express Lab!` |
-| `GET` | `/about` | Student / author details | `{"name": "G. Meghana", "section": "CSE GEN-AI-2A"}` |
-| `GET` | `/time` | Current date and timestamp | `{"currentDateTime": "2026-10-16T10:30:00.000Z"}` |
-| `*` | Any other route | 404 error handler | `404 - Page Not Found` |
+| Method | Endpoint | Live Link | Description | Sample Response |
+| :--- | :--- | :--- | :--- | :--- |
+| `GET` | `/` | [Open /](https://lab01-silk.vercel.app/) | Welcome page | `Welcome to my Node.js and Express Lab!` |
+| `GET` | `/about` | [Open /about](https://lab01-silk.vercel.app/about) | Student / author details | `{"name": "G. Meghana", "section": "CSE GEN-AI-2A"}` |
+| `GET` | `/time` | [Open /time](https://lab01-silk.vercel.app/time) | Current date and timestamp | `{"currentDateTime": "2026-10-16T15:46:26.261Z"}` |
+| `*` | Any other route | [Open /random](https://lab01-silk.vercel.app/random) | 404 error handler | `404 - Page Not Found` |
 
 ---
 
