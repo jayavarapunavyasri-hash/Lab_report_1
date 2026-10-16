@@ -16,6 +16,7 @@ A foundational backend development lab demonstrating how to build web servers us
 ```text
 BDF-Lab-01/
 ├── node_modules/         # Installed dependencies (git ignored)
+├── screenshots/          # Output and verification screenshots
 ├── .gitignore            # Git ignore file
 ├── package.json          # Project metadata & dependencies
 ├── package-lock.json     # Dependency lockfile
@@ -81,6 +82,17 @@ node server-http.js
 | `GET` | `/about` | Student / author details | `{"name": "G. Meghana", "section": "CSE GEN-AI-2A"}` |
 | `GET` | `/time` | Current date and timestamp | `{"currentDateTime": "2026-10-16T10:30:00.000Z"}` |
 | `*` | Any other route | 404 error handler | `404 - Page Not Found` |
+
+---
+
+## 📸 Screenshots
+
+| Lab Execution & Output |
+| :---: |
+| ![Welcome & Output](screenshots/Screenshot%202026-10-16%20155259.png) |
+| ![About Route](screenshots/Screenshot%202026-10-16%20155602.png) |
+| ![Time Route](screenshots/Screenshot%202026-10-16%20155620.png) |
+| ![Terminal Execution](screenshots/Screenshot%202026-10-16%20155635.png) |
 
 ---
 
