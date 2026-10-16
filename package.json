@@ -2,8 +2,9 @@
   "name": "bdf-lab-01",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "server-http.js",
   "scripts": {
+    "start": "node server-http.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
