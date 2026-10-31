@@ -16,8 +16,8 @@ A foundational backend development lab demonstrating how to build web servers us
 
 ## 👤 Author Information
 
-- **Name:** G. Meghana
-- **Section:** CSE GEN-AI-2A
+- **Name:** J. Navya Sri
+- **Section:** CSE AIML - 2B
 
 ---
 
@@ -56,8 +56,8 @@ npm -v
 Clone the repository and install dependencies:
 
 ```bash
-git clone https://github.com/meghanagogineni919-stack/LAB-1.git
-cd LAB-1
+git clone https://github.com/jayavarapunavyasri-hash/Lab_report_1.git
+cd Lab_report_1
 npm install
 ```
 
@@ -91,20 +91,20 @@ node server-http.js
 | Method | Endpoint | Live Link | Description | Sample Response |
 | :--- | :--- | :--- | :--- | :--- |
 | `GET` | `/` | [Open /](https://lab01-silk.vercel.app/) | Welcome page | `Welcome to my Node.js and Express Lab!` |
-| `GET` | `/about` | [Open /about](https://lab01-silk.vercel.app/about) | Student / author details | `{"name": "G. Meghana", "section": "CSE GEN-AI-2A"}` |
-| `GET` | `/time` | [Open /time](https://lab01-silk.vercel.app/time) | Current date and timestamp | `{"currentDateTime": "2026-10-16T15:46:26.261Z"}` |
+| `GET` | `/about` | [Open /about](https://lab01-silk.vercel.app/about) | Student / author details | `{"name": "J. Navya Sri", "section": "CSE AIML - 2B "}` |
+| `GET` | `/time` | [Open /time](https://lab01-silk.vercel.app/time) | Current date and timestamp | `{"currentDateTime": "..."}` |
 | `*` | Any other route | [Open /random](https://lab01-silk.vercel.app/random) | 404 error handler | `404 - Page Not Found` |
 
 ---
 
 ## 📸 Screenshots
 
-| Lab Execution & Output |
-| :---: |
-| ![Welcome & Output](screenshots/Screenshot%202026-10-16%20155259.png) |
-| ![About Route](screenshots/Screenshot%202026-10-16%20155602.png) |
-| ![Time Route](screenshots/Screenshot%202026-10-16%20155620.png) |
-| ![Terminal Execution](screenshots/Screenshot%202026-10-16%20155635.png) |
+| Route / Test | Screenshot |
+| :--- | :---: |
+| **Welcome (`/`)** | ![Welcome & Output](screenshots/welcome.png) |
+| **About (`/about`)** | ![About Route](screenshots/about.png) |
+| **Time (`/time`)** | ![Time Route](screenshots/time.png) |
+| **404 Not Found (`/nothing`)** | ![404 Handler](screenshots/404-not-found.png) |
 
 ---
 
