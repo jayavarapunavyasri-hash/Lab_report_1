@@ -6,11 +6,11 @@ A foundational backend development lab demonstrating how to build web servers us
 
 ## 🌐 Live Deployment
 
-🔗 **Live URL:** [https://lab01-silk.vercel.app/](https://lab01-silk.vercel.app/)
+🔗 **Live URL:** [https://bakendlabreport1.vercel.app/](https://bakendlabreport1.vercel.app/)
 
-- 🏠 **Home:** [https://lab01-silk.vercel.app/](https://lab01-silk.vercel.app/)
-- 👤 **About:** [https://lab01-silk.vercel.app/about](https://lab01-silk.vercel.app/about)
-- ⏰ **Time:** [https://lab01-silk.vercel.app/time](https://lab01-silk.vercel.app/time)
+- 🏠 **Home:** [https://bakendlabreport1.vercel.app/](https://bakendlabreport1.vercel.app/)
+- 👤 **About:** [https://bakendlabreport1.vercel.app/about](https://bakendlabreport1.vercel.app/about)
+- ⏰ **Time:** [https://bakendlabreport1.vercel.app/time](https://bakendlabreport1.vercel.app/time)
 
 ---
 
@@ -90,10 +90,10 @@ node server-http.js
 
 | Method | Endpoint | Live Link | Description | Sample Response |
 | :--- | :--- | :--- | :--- | :--- |
-| `GET` | `/` | [Open /](https://lab01-silk.vercel.app/) | Welcome page | `Welcome to my Node.js and Express Lab!` |
-| `GET` | `/about` | [Open /about](https://lab01-silk.vercel.app/about) | Student / author details | `{"name": "J. Navya Sri", "section": "CSE AIML - 2B "}` |
-| `GET` | `/time` | [Open /time](https://lab01-silk.vercel.app/time) | Current date and timestamp | `{"currentDateTime": "..."}` |
-| `*` | Any other route | [Open /random](https://lab01-silk.vercel.app/random) | 404 error handler | `404 - Page Not Found` |
+| `GET` | `/` | [Open /](https://bakendlabreport1.vercel.app/) | Welcome page | `Welcome to my Node.js and Express Lab!` |
+| `GET` | `/about` | [Open /about](https://bakendlabreport1.vercel.app/about) | Student / author details | `{"name": "J. Navya Sri", "section": "CSE AIML - 2B "}` |
+| `GET` | `/time` | [Open /time](https://bakendlabreport1.vercel.app/time) | Current date and timestamp | `{"currentDateTime": "..."}` |
+| `*` | Any other route | [Open /random](https://bakendlabreport1.vercel.app/random) | 404 error handler | `404 - Page Not Found` |
 
 ---
 

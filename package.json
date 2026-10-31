@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "main": "server-http.js",
-  "homepage": "https://lab01-silk.vercel.app/",
+  "homepage": "https://bakendlabreport1.vercel.app/",
   "scripts": {
     "start": "node server-http.js",
     "test": "echo \"Error: no test specified\" && exit 1"
