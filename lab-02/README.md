@@ -3,7 +3,8 @@
 **Name:** J. Navya Sri  
 **Section:** CSE AIML - 2B  
 **Registration Number:** [Your Reg Number]  
-**Live Link:** Not applicable  
+**Localhost Link:** `http://localhost:3000/`  
+**Base API URL:** `http://localhost:3000/books/`  
 
 ---
 
@@ -23,19 +24,19 @@
    ```bash
    npm run dev
    ```
-   Server will start at `http://localhost:3000/`.
+   Server will start running at `http://localhost:3000/`.
 
 ---
 
 ## Endpoints
 
-| Method | Endpoint | Description |
-|---|---|---|
-| `GET` | `/books/` | Retrieve and return all books |
-| `GET` | `/books/:bookId/` | Retrieve a specific book by ID |
-| `POST` | `/books/` | Add a new book to the database |
-| `PUT` | `/books/:bookId/` | Update the details of an existing book by ID |
-| `DELETE` | `/books/:bookId/` | Delete a book by ID |
+| Method | Endpoint | Localhost URL | Description |
+|---|---|---|---|
+| `GET` | `/books/` | `http://localhost:3000/books/` | Retrieve and return all books |
+| `GET` | `/books/:bookId/` | `http://localhost:3000/books/:bookId/` | Retrieve a specific book by ID |
+| `POST` | `/books/` | `http://localhost:3000/books/` | Add a new book to the database |
+| `PUT` | `/books/:bookId/` | `http://localhost:3000/books/:bookId/` | Update the details of an existing book by ID |
+| `DELETE` | `/books/:bookId/` | `http://localhost:3000/books/:bookId/` | Delete a book by ID |
 
 ---
 
