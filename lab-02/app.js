@@ -1,5 +1,6 @@
 const express = require("express");
 const path = require("path");
+const fs = require("fs");
 const { open } = require("sqlite");
 const sqlite3 = require("sqlite3");
 
@@ -8,8 +9,11 @@ const app = express();
 // Middleware to parse JSON request bodies
 app.use(express.json());
 
-// Path to the SQLite database
-const dbPath = path.join(__dirname, "database", "library.db");
+// On Vercel, the filesystem is read-only except for /tmp
+// So we copy the database to /tmp and use it from there
+const isVercel = !!process.env.VERCEL;
+const dbSource = path.join(__dirname, "database", "library.db");
+const dbPath = isVercel ? "/tmp/library.db" : dbSource;
 
 // Variable to store the database connection object
 let db = null;
@@ -17,6 +21,11 @@ let db = null;
 // Asynchronous function to connect to database and start server
 const initializeDBAndServer = async () => {
   try {
+    // On Vercel: copy the database file to /tmp (writable folder)
+    if (isVercel && !fs.existsSync(dbPath)) {
+      fs.copyFileSync(dbSource, dbPath);
+    }
+
     // Connect to SQLite database using sqlite and sqlite3 driver
     db = await open({
       filename: dbPath,
