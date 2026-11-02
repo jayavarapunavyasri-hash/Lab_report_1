@@ -3,7 +3,8 @@
 **Name:** J. Navya Sri  
 **Section:** CSE AIML - 2B  
 **Registration Number:** [Your Reg Number]  
-**Localhost Link:** `http://localhost:3000/`  
+**Live Link:** Not applicable (SQLite is a local file-based database; not compatible with serverless deployment)  
+**Host Link:** `http://localhost:3000/`  
 **Base API URL:** `http://localhost:3000/books/`  
 
 ---
