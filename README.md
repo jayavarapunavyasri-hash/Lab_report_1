@@ -1,114 +1,66 @@
-# BDF Lab 01 - Node.js & Express Basics
+# Lab 2: SQLite database and CRUD routes
 
-A foundational backend development lab demonstrating how to build web servers using both Node.js built-in `http` module and the Express.js framework.
-
----
-
-## 🌐 Live Deployment
-
-🔗 **Live URL:** [https://bakendlabreport1.vercel.app/](https://bakendlabreport1.vercel.app/)
-
-- 🏠 **Home:** [https://bakendlabreport1.vercel.app/](https://bakendlabreport1.vercel.app/)
-- 👤 **About:** [https://bakendlabreport1.vercel.app/about](https://bakendlabreport1.vercel.app/about)
-- ⏰ **Time:** [https://bakendlabreport1.vercel.app/time](https://bakendlabreport1.vercel.app/time)
+**Name:** J. Navya Sri  
+**Section:** CSE AIML - 2B  
+**Registration Number:** [252U1R6100]  
+**Live Link:** https://lab-report-2-two.vercel.app  
+**Host Link:** `http://localhost:3000/`  
+**Base API URL:** `http://localhost:3000/books/`  
 
 ---
 
-## 👤 Author Information
+## How to Run
 
-- **Name:** J. Navya Sri
-- **Section:** CSE AIML - 2B
+1. **Install dependencies:**
+   ```bash
+   npm install
+   ```
 
----
+2. **Verify Database:**
+   ```bash
+   npm run verify-db
+   ```
 
-## 📁 Project Structure
-
-```text
-BDF-Lab-01/
-├── api/                  # Vercel serverless entry point
-├── node_modules/         # Installed dependencies (git ignored)
-├── screenshots/          # Output and verification screenshots
-├── .gitignore            # Git ignore file
-├── package.json          # Project metadata & dependencies
-├── package-lock.json     # Dependency lockfile
-├── plain-server.js       # Basic server using Node.js 'http' module
-├── server-http.js        # Express.js server with routes and 404 handler
-├── vercel.json           # Vercel deployment & routing config
-└── README.md             # Project documentation
-```
+3. **Start the Development Server:**
+   ```bash
+   npm run dev
+   ```
+   Server will start running at `http://localhost:3000/`.
 
 ---
 
-## 🚀 Getting Started
+## Endpoints
 
-### Prerequisites
-
-Ensure you have [Node.js](https://nodejs.org/) (v18 or higher recommended) installed.
-
-Check versions:
-```bash
-node -v
-npm -v
-```
-
-### Installation
-
-Clone the repository and install dependencies:
-
-```bash
-git clone https://github.com/jayavarapunavyasri-hash/Lab_report_1.git
-cd Lab_report_1
-npm install
-```
+| Method | Endpoint | Localhost URL | Description |
+|---|---|---|---|
+| `GET` | `/books/` | `http://localhost:3000/books/` | Retrieve and return all books |
+| `GET` | `/books/:bookId/` | `http://localhost:3000/books/:bookId/` | Retrieve a specific book by ID |
+| `POST` | `/books/` | `http://localhost:3000/books/` | Add a new book to the database |
+| `PUT` | `/books/:bookId/` | `http://localhost:3000/books/:bookId/` | Update the details of an existing book by ID |
+| `DELETE` | `/books/:bookId/` | `http://localhost:3000/books/:bookId/` | Delete a book by ID |
 
 ---
 
-## 💻 Running the Servers
+## Screenshots
 
-### 1. Plain HTTP Server
-Runs a lightweight server built with the native Node.js `http` module:
+### 1. GET All Books (`GET /books/`)
+![GET All Books](screenshots/01-get-all-books.png)
 
-```bash
-node plain-server.js
-```
-- **URL:** [http://localhost:3000](http://localhost:3000)
-- **Response:** Plain text `"Hello"`
+### 2. GET Specific Book (`GET /books/:bookId/`)
+![GET Specific Book](screenshots/02-get-single-book.png)
 
----
+### 3. POST Add Book (`POST /books/`)
+![POST Add Book](screenshots/03-post-add-book.png)
 
-### 2. Express Server
-Runs an Express.js server with route handling:
+### 4. PUT Update Book (`PUT /books/:bookId/`)
+![PUT Update Book](screenshots/04-put-update-book.png)
 
-```bash
-node server-http.js
-```
-- **URL:** [http://localhost:3000](http://localhost:3000)
+### 5. DELETE Book (`DELETE /books/:bookId/`)
+![DELETE Book](screenshots/05-delete-book.png)
 
 ---
 
-## 📡 API Endpoints (Express Server)
+## Notes: Problems Faced and Solutions
+- **Empty Body on PUT / POST Requests:** Initially, sending an empty request body caused an `SQLITE_CONSTRAINT: NOT NULL constraint failed: book.title` database error. Added input validation in `app.js` to return a clear `400 Bad Request` if required fields are missing and supplied the required JSON body in Postman.
+- **Server Startup Order:** Ensured that the Express server only starts listening on port 3000 after the SQLite database connection promise resolves via `initializeDBAndServer()`.
 
-| Method | Endpoint | Live Link | Description | Sample Response |
-| :--- | :--- | :--- | :--- | :--- |
-| `GET` | `/` | [Open /](https://bakendlabreport1.vercel.app/) | Welcome page | `Welcome to my Node.js and Express Lab!` |
-| `GET` | `/about` | [Open /about](https://bakendlabreport1.vercel.app/about) | Student / author details | `{"name": "J. Navya Sri", "section": "CSE AIML - 2B "}` |
-| `GET` | `/time` | [Open /time](https://bakendlabreport1.vercel.app/time) | Current date and timestamp | `{"currentDateTime": "..."}` |
-| `*` | Any other route | [Open /random](https://bakendlabreport1.vercel.app/random) | 404 error handler | `404 - Page Not Found` |
-
----
-
-## 📸 Screenshots
-
-| Route / Test | Screenshot |
-| :--- | :---: |
-| **Welcome (`/`)** | ![Welcome & Output](screenshots/welcome.png) |
-| **About (`/about`)** | ![About Route](screenshots/about.png) |
-| **Time (`/time`)** | ![Time Route](screenshots/time.png) |
-| **404 Not Found (`/nothing`)** | ![404 Handler](screenshots/404-not-found.png) |
-
----
-
-## 🛠️ Built With
-
-- [Node.js](https://nodejs.org/) - JavaScript Runtime
-- [Express.js](https://expressjs.com/) - Web framework for Node.js

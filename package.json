@@ -1,18 +1,23 @@
 {
-  "name": "bdf-lab-01",
+  "name": "bdf-lab-02",
   "version": "1.0.0",
-  "description": "",
-  "main": "server-http.js",
-  "homepage": "https://bakendlabreport1.vercel.app/",
+  "description": "BDF Lab 02: SQLite Database and CRUD Routes",
+  "main": "app.js",
   "scripts": {
-    "start": "node server-http.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node app.js",
+    "dev": "nodemon app.js",
+    "verify-db": "node database/verify.js"
+  },
+  "dependencies": {
+    "express": "^4.22.3",
+    "sqlite": "^5.1.1",
+    "sqlite3": "^5.1.7"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.14"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "type": "commonjs",
-  "dependencies": {
-    "express": "^5.3.0"
-  }
+  "type": "commonjs"
 }
