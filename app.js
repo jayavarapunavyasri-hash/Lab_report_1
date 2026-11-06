@@ -46,6 +46,11 @@ const initializeDBAndServer = async () => {
 // Call the function to start the server
 initializeDBAndServer();
 
+// Root route - welcome message
+app.get("/", (request, response) => {
+  response.send("BDF Lab 02 - Library API Server is Running!");
+});
+
 // 1. GET /books - Retrieve and return all books
 app.get("/books", async (request, response) => {
   try {
