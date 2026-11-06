@@ -4,8 +4,8 @@
 **Section:** CSE AIML - 2B  
 **Registration Number:** [252U1R6100]  
 **Live Link:** https://lab-report-2-two.vercel.app  
-**Host Link:** `http://localhost:3000/`  
-**Base API URL:** `http://localhost:3000/books/`  
+**Host Link:** https://lab-02-sqlite-crud-wine.vercel.app  
+**Base API URL:** https://lab-report-2-two.vercel.app/books/  
 
 ---
 
