@@ -11,7 +11,10 @@ REST API with query parameters, validation, and debugging using Node.js, Express
 http://localhost:3000/books
 
 ## Live Deployment
-Deployment pending.
+[https://lab-report-1-fvho.vercel.app/](https://lab-report-1-fvho.vercel.app/)
+
+- **Base URL:** [https://lab-report-1-fvho.vercel.app/](https://lab-report-1-fvho.vercel.app/)
+- **Books API Endpoint:** [https://lab-report-1-fvho.vercel.app/books](https://lab-report-1-fvho.vercel.app/books)
 
 ## Screenshots
 
