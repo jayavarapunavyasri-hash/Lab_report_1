@@ -1,0 +1,28 @@
+{
+  "name": "rest-api-query-parameters-validation-and-debugging",
+  "version": "1.0.0",
+  "description": "Backend Development Fundamentals Lab 3 - REST API, Query Parameters, Validation and Debugging",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "dev": "nodemon app.js",
+    "test": "node test.js"
+  },
+  "keywords": [
+    "nodejs",
+    "express",
+    "sqlite",
+    "crud"
+  ],
+  "author": "Jayavarapu Navya Sri (252U1R6100)",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^5.3.0",
+    "sqlite": "^5.1.1",
+    "sqlite3": "^6.0.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.14"
+  },
+  "type": "commonjs"
+}
