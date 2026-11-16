@@ -349,7 +349,7 @@ const ALLOWED_ORDER_BY_COLUMNS = ["id", "title", "author", "price", "pages"];
 
 // 1. Root Route
 app.get("/", (req, res) => {
-  res.send("Backend Development Fundamentals Lab 3 - REST API, Query Parameters, Validation and Debugging");
+  res.send("Lab 4: User Registration, Login and JWT Authentication");
 });
 
 // 2. READ ALL: Get books with Query Parameters (search_q, order_by, order, limit, offset, min_price, max_price)
