@@ -354,11 +354,3 @@ The following verification suite documents all required functional scenarios tes
 </p>
 
 ---
-
-## 📋 Automated Test Suite Verification
-
-All 23 automated integration tests pass successfully covering query parameters, edge-case validations, error responses, CRUD lifecycle, user registration, login, and JWT verification:
-
-```bash
-npm test
-```
