@@ -18,8 +18,8 @@ The project builds upon the foundational REST API and SQLite architecture, intro
 ## 🔗 Project Links
 
 - 📂 **GitHub Repository:** [https://github.com/jayavarapunavyasri-hash/Lab_report_1/tree/lab-4](https://github.com/jayavarapunavyasri-hash/Lab_report_1/tree/lab-4)
+- 🚀 **Live Deployment URL:** [https://lab-report-4-nuhe.onrender.com/](https://lab-report-4-nuhe.onrender.com/)
 - 💻 **Local Server URL:** [http://localhost:3000/](http://localhost:3000/)
-- 🚀 **Deployment Status:** Locally tested and pre-deployment (production ready, pending live host configuration)
 
 ---
 
